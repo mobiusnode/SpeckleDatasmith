@@ -1,0 +1,2 @@
+C:\Users\Barret\Desktop\Speckle Unreal\SpeckleDatasmith\DatasmithRevitExporter\DatasmithRevit2019\obj\Debug\DatasmithRevit2019.csprojAssemblyReference.cache
+C:\Users\Barret\Desktop\Speckle Unreal\SpeckleDatasmith\DatasmithRevitExporter\DatasmithRevit2019\obj\Debug\DatasmithRevit2019.csproj.CoreCompileInputs.cache
