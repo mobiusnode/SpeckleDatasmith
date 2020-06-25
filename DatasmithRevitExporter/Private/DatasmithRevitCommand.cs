@@ -21,6 +21,8 @@ namespace DatasmithRevitExporter
 	{
 		private const string DIALOG_CAPTION = "Export 3D View to Unreal Datasmith";
 
+		public SpeckleDatasmith.Command SpeckleCommand;
+
 		// Implement the interface to execute the command.
 		public Result Execute(
 			ExternalCommandData InCommandData,     // contains reference to Application and View
@@ -161,7 +163,7 @@ namespace DatasmithRevitExporter
 			EnableViewWindow(InCommandData.Application, false);
 
 			// Create a custom export context for command Export to Unreal Datasmith.
-			FDatasmithRevitExportContext ExportContext = new FDatasmithRevitExportContext(InCommandData.Application.Application, Doc, FilePaths, ExportOptions);
+			FDatasmithRevitExportContext ExportContext = new FDatasmithRevitExportContext(InCommandData.Application.Application, Doc, FilePaths, ExportOptions, SpeckleCommand);
 
 			// Export the active 3D View to the given Unreal Datasmith file.
 			using( CustomExporter Exporter = new CustomExporter(Doc, ExportContext) )

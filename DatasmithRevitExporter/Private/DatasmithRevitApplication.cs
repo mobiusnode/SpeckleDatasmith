@@ -31,6 +31,19 @@ namespace DatasmithRevitExporter
 			ExportPushButton.LargeImage = new BitmapImage(DatasmithIconURI);
 			ExportPushButton.ToolTip    = "Export an active 3D View to Unreal Datasmith";
 
+
+			#region SpeckleButton
+			PushButtonData speckleButtonData = new PushButtonData("Speckle", "Speckle", AssemblyPath, "SpeckleDatasmith.Command");
+
+			PushButton specklePushButton = DatasmithRibbonPanel.AddItem(speckleButtonData) as PushButton;
+
+			Uri speckleIconURI = new Uri(Path.Combine(Path.GetDirectoryName(AssemblyPath), "speckle32.png"));
+
+			specklePushButton.LargeImage = new BitmapImage(speckleIconURI);
+			specklePushButton.ToolTip = "Create Speckle stream to Unreal Datasmith";
+			#endregion
+
+
 			return Result.Succeeded;
 		}
 

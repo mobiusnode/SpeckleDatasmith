@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="RevitAPI">
       <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
       <Private>False</Private>
@@ -52,9 +53,17 @@
       <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="SpeckleCore">
+      <HintPath>..\..\..\SpeckleCore\SpeckleCore\bin\Debug\net45\SpeckleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="SpecklePopup, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SpeckleAccountManager\bin\Debug\SpecklePopup.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatasmithFacade\DatasmithFacadeCSharp.cs" />
@@ -95,6 +104,8 @@
     <Compile Include="..\..\..\..\..\..\Binaries\Win64\DatasmithFacadeCSharp\Public\*.cs">
       <Link>DatasmithSwigFacade\%(Filename)%(Extension)</Link>
     </Compile>
+    <Compile Include="SpeckleDatasmith\Command.cs" />
+    <Compile Include="SpeckleDatasmith\TestExportContext.cs" />
     <Content Include="DatasmithRevit2019.addin" />
   </ItemGroup>
   <ItemGroup />

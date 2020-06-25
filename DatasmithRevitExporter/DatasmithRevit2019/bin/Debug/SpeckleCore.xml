@@ -1,0 +1,1006 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpeckleCore</name>
+    </assembly>
+    <members>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserRegisterAsync(SpeckleCore.User)">
+            <summary>UserRegister</summary>
+            <returns>New user successfully registered.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserRegisterAsync(SpeckleCore.User,System.Threading.CancellationToken)">
+            <summary>UserRegister</summary>
+            <returns>New user successfully registered.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserLoginAsync(SpeckleCore.User)">
+            <summary>UserLogin</summary>
+            <param name="body">The only required elements are email and password.</param>
+            <returns>You've logged in.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserLoginAsync(SpeckleCore.User,System.Threading.CancellationToken)">
+            <summary>UserLogin</summary>
+            <param name="body">The only required elements are email and password.</param>
+            <returns>You've logged in.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserSearchAsync(SpeckleCore.User)">
+            <summary>UserSearch</summary>
+            <returns>New user successfully registered.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserSearchAsync(SpeckleCore.User,System.Threading.CancellationToken)">
+            <summary>UserSearch</summary>
+            <returns>New user successfully registered.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserGetAsync">
+            <summary>UserGet</summary>
+            <returns>New user successfully registered.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserGetAsync(System.Threading.CancellationToken)">
+            <summary>UserGet</summary>
+            <returns>New user successfully registered.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserUpdateProfileAsync(SpeckleCore.User)">
+            <summary>UserUpdateProfile</summary>
+            <returns>Things are looking good yo.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserUpdateProfileAsync(SpeckleCore.User,System.Threading.CancellationToken)">
+            <summary>UserUpdateProfile</summary>
+            <returns>Things are looking good yo.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserGetProfileByIdAsync(System.String)">
+            <summary>UserGetProfileById</summary>
+            <returns>New user successfully registered.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.UserGetProfileByIdAsync(System.String,System.Threading.CancellationToken)">
+            <summary>UserGetProfileById</summary>
+            <returns>New user successfully registered.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientGetAllAsync">
+            <summary>ClientGetAll</summary>
+            <returns>All the users's clients.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientGetAllAsync(System.Threading.CancellationToken)">
+            <summary>ClientGetAll</summary>
+            <returns>All the users's clients.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientCreateAsync(SpeckleCore.AppClient)">
+            <summary>ClientCreate</summary>
+            <returns>All the users's clients.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientCreateAsync(SpeckleCore.AppClient,System.Threading.CancellationToken)">
+            <summary>ClientCreate</summary>
+            <returns>All the users's clients.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientUpdateAsync(System.String,SpeckleCore.AppClient)">
+            <summary>ClientUpdate</summary>
+            <returns>All the users's clients.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientUpdateAsync(System.String,SpeckleCore.AppClient,System.Threading.CancellationToken)">
+            <summary>ClientUpdate</summary>
+            <returns>All the users's clients.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientGetAsync(System.String)">
+            <summary>ClientGet</summary>
+            <returns>The client.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientGetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>ClientGet</summary>
+            <returns>The client.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientDeleteAsync(System.String)">
+            <summary>ClientDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ClientDeleteAsync(System.String,System.Threading.CancellationToken)">
+            <summary>ClientDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectGetAllAsync">
+            <summary>ProjectGetAll</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectGetAllAsync(System.Threading.CancellationToken)">
+            <summary>ProjectGetAll</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectCreateAsync(SpeckleCore.Project)">
+            <summary>ProjectCreate</summary>
+            <returns>All the users's clients.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectCreateAsync(SpeckleCore.Project,System.Threading.CancellationToken)">
+            <summary>ProjectCreate</summary>
+            <returns>All the users's clients.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectUpdateAsync(System.String,SpeckleCore.Project)">
+            <summary>ProjectUpdate</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectUpdateAsync(System.String,SpeckleCore.Project,System.Threading.CancellationToken)">
+            <summary>ProjectUpdate</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectGetAsync(System.String)">
+            <summary>ProjectGet</summary>
+            <returns>The client.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectGetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>ProjectGet</summary>
+            <returns>The client.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectDeleteAsync(System.String)">
+            <summary>ProjectDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ProjectDeleteAsync(System.String,System.Threading.CancellationToken)">
+            <summary>ProjectDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentCreateAsync(SpeckleCore.ResourceType,System.String,SpeckleCore.Comment)">
+            <summary>CommentCreate</summary>
+            <param name="resourceType">The resource type you want to comment on.</param>
+            <param name="resourceId">The resource id you want to comment on. In the case of streams, it must be a streamId.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentCreateAsync(SpeckleCore.ResourceType,System.String,SpeckleCore.Comment,System.Threading.CancellationToken)">
+            <summary>CommentCreate</summary>
+            <param name="resourceType">The resource type you want to comment on.</param>
+            <param name="resourceId">The resource id you want to comment on. In the case of streams, it must be a streamId.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentGetFromResourceAsync(SpeckleCore.ResourceType,System.String)">
+            <summary>CommentGetFromResource</summary>
+            <param name="resourceType">The resource type you want to comment on.</param>
+            <param name="resourceId">The resource id you want to comment on. In the case of streams, it must be a streamId.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentGetFromResourceAsync(SpeckleCore.ResourceType,System.String,System.Threading.CancellationToken)">
+            <summary>CommentGetFromResource</summary>
+            <param name="resourceType">The resource type you want to comment on.</param>
+            <param name="resourceId">The resource id you want to comment on. In the case of streams, it must be a streamId.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentGetAsync(System.String)">
+            <summary>CommentGet</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentGetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>CommentGet</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentUpdateAsync(System.String,SpeckleCore.Comment)">
+            <summary>CommentUpdate</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentUpdateAsync(System.String,SpeckleCore.Comment,System.Threading.CancellationToken)">
+            <summary>CommentUpdate</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentDeleteAsync(System.String)">
+            <summary>CommentDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.CommentDeleteAsync(System.String,System.Threading.CancellationToken)">
+            <summary>CommentDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamsGetAllAsync(System.String)">
+            <summary>StreamsGetAll</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamsGetAllAsync(System.Threading.CancellationToken,System.String)">
+            <summary>StreamsGetAll</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamCreateAsync(SpeckleCore.SpeckleStream)">
+            <summary>StreamCreate</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamCreateAsync(SpeckleCore.SpeckleStream,System.Threading.CancellationToken)">
+            <summary>StreamCreate</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamGetAsync(System.String,System.String)">
+            <summary>StreamGet</summary>
+            <param name="query">Specifiy which fields to retrieve, ie `?fields=layers,baseProperties`.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamGetAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>StreamGet</summary>
+            <param name="query">Specifiy which fields to retrieve, ie `?fields=layers,baseProperties`.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamUpdateAsync(System.String,SpeckleCore.SpeckleStream)">
+            <summary>StreamUpdate</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamUpdateAsync(System.String,SpeckleCore.SpeckleStream,System.Threading.CancellationToken)">
+            <summary>StreamUpdate</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamDeleteAsync(System.String)">
+            <summary>StreamDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamDeleteAsync(System.String,System.Threading.CancellationToken)">
+            <summary>StreamDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamGetObjectsAsync(System.String,System.String)">
+            <summary>StreamGetObjects</summary>
+            <param name="query">Specifiy which fields to retrieve, filters, limits, etc.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamGetObjectsAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>StreamGetObjects</summary>
+            <param name="query">Specifiy which fields to retrieve, filters, limits, etc.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamCloneAsync(System.String)">
+            <summary>StreamClone</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamCloneAsync(System.String,System.Threading.CancellationToken)">
+            <summary>StreamClone</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamDiffAsync(System.String,System.String)">
+            <summary>StreamDiff</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.StreamDiffAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>StreamDiff</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectCreateAsync(System.Collections.Generic.IEnumerable{SpeckleCore.SpeckleObject})">
+            <summary>ObjectCreate</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectCreateAsync(System.Collections.Generic.IEnumerable{SpeckleCore.SpeckleObject},System.Threading.CancellationToken)">
+            <summary>ObjectCreate</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectDeriveAsync(System.Collections.Generic.IEnumerable{SpeckleCore.SpeckleObject})">
+            <summary>ObjectCreate</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectDeriveAsync(System.Collections.Generic.IEnumerable{SpeckleCore.SpeckleObject},System.Threading.CancellationToken)">
+            <summary>ObjectCreate</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectUpdateAsync(System.String,SpeckleCore.SpeckleObject)">
+            <summary>ObjectUpdate</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectUpdateAsync(System.String,SpeckleCore.SpeckleObject,System.Threading.CancellationToken)">
+            <summary>ObjectUpdate</summary>
+            <returns>All the users's projects.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectGetAsync(System.String)">
+            <summary>ObjectGet</summary>
+            <returns>The client.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectGetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>ObjectGet</summary>
+            <returns>The client.</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectDeleteAsync(System.String)">
+            <summary>ObjectDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectDeleteAsync(System.String,System.Threading.CancellationToken)">
+            <summary>ObjectDelete</summary>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectUpdatePropertiesAsync(System.String,System.Object)">
+            <summary>ObjectUpdateProperties</summary>
+            <param name="@object">An object that holds the keys you want to modify or add.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.ObjectUpdatePropertiesAsync(System.String,System.Object,System.Threading.CancellationToken)">
+            <summary>ObjectUpdateProperties</summary>
+            <param name="@object">An object that holds the keys you want to modify or add.</param>
+            <returns>All good!</returns>
+            <exception cref="T:SpeckleCore.SpeckleException">A server side error occurred.</exception>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SpeckleCore.SpeckleApiClient.ObjectGetBulkAsync(System.String[],System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:SpeckleCore.SpeckleApiClient.ObjectGetBulkAsync(System.String[],System.String,System.Threading.CancellationToken)" -->
+        <member name="M:SpeckleCore.SpeckleApiClient.IntializeReceiver(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initialises this client as a receiver for a specific stream. 
+            </summary>
+            <param name="streamId"></param>
+            <param name="documentName"></param>
+            <param name="documentType"></param>
+            <param name="documentGuid"></param>
+            <param name="authToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.IntializeSender(System.String,System.String,System.String,System.String)">
+            <summary>
+            Initialises this client as a Sender by creating a new stream.
+            </summary>
+            <param name="authToken"></param>
+            <param name="documentName"></param>
+            <param name="documentType"></param>
+            <param name="documentGuid"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SpeckleCore.SpeckleApiClient.SetupWebsocket" -->
+        <member name="M:SpeckleCore.SpeckleApiClient.SendMessage(System.String,System.Object)">
+            <summary>
+            Sends a direct message to another websocket client.
+            </summary>
+            <param name="receipientId">The clientId of the socket you want to send the message to.</param>
+            <param name="args">What you want to send. Make it serialisable and small.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.BroadcastMessage(System.String,System.String,System.Object)">
+            <summary>
+            Broadcasts a message in a specific websocket room, as defined by resourceType and resourceId.
+            </summary>
+            <param name="resourceType">Can be stream, object, project, comment, user.</param>
+            <param name="resourceId">The database id of the resource.</param>
+            <param name="args">The message. Make it serialisable and small.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.JoinRoom(System.String,System.String)">
+            <summary>
+            Joins a websocket room based a resource type and its id. This will subscribe you to any broadcasts in that room.
+            </summary>
+            <param name="resourceType">Can be stream, object, project, comment, user.</param>
+            <param name="resourceId">The database id of the resource.</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleApiClient.LeaveRoom(System.String,System.String)">
+            <summary>
+            Leaves a websocket room based a resource type and its id. This will stop you from receiving any broadcasts in that room.
+            </summary>
+            <param name="resourceType">Can be stream, object, project, comment, user.</param>
+            <param name="resourceId">The database id of the resource.</param>
+        </member>
+        <member name="T:SpeckleCore.SpeckleKitLoader">
+            <summary>
+            Thanks to @radugidei for the idea: we're attempting to rip off NancyFX's guerilla assembly loading.
+            See original src (MIT): 
+            https://raw.githubusercontent.com/NancyFx/Nancy/de458a9b42db6478e0c2bb8adef0f9fa342a2674/src/Nancy/AppDomainAssemblyCatalog.cs
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.AssemblyExtensions.IsReferencing(System.Reflection.Assembly,System.Reflection.AssemblyName)">
+            <summary>
+            Indicates if a given assembly references another which is identified by its name.
+            </summary>
+            <param name="assembly">The assembly which will be probed.</param>
+            <param name="referenceName">The reference assembly name.</param>
+            <returns>A boolean value indicating if there is a reference.</returns>
+        </member>
+        <member name="T:SpeckleCore.Converter">
+            <summary>
+            Utility functions.
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.Converter.Deserialise(System.Collections.Generic.IEnumerable{SpeckleCore.SpeckleObject},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Deserialises a list of speckle objects.
+            </summary>
+            <param name="o">The object.</param>
+            <returns>A native type, a SpeckleAbstract if no explicit conversion found, or null.</returns>
+        </member>
+        <member name="M:SpeckleCore.Converter.Deserialise(SpeckleCore.SpeckleObject,System.Object,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>                                                  
+            Deserialises a speckle object.                             
+            </summary>                                                 
+            <param name="obj"></param>
+            <returns>an object, a SpeckleAbstract or null.</returns>
+        </member>
+        <member name="M:SpeckleCore.Converter.Serialise(System.Collections.Generic.IEnumerable{System.Object},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            This method will convert an object to a SpeckleObject, if possible.
+            </summary>
+            <param name="o">The object.</param>
+            <returns>Null or a speckle object (SpeckleAbstract if no explicit conversion method is found).</returns>
+        </member>
+        <member name="M:SpeckleCore.Converter.Serialise(System.Object,System.Int32,System.Collections.Generic.Dictionary{System.Int32,System.String},System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Serialises an object to a speckle object.
+            </summary>
+            <param name="source">The object you want to serialise.</param>
+            <param name="recursionDepth">Leave this blank, unless you really know what you're doing.</param>
+            <param name="traversed">Leave this blank, unless you really know what you're doing.</param>
+            <param name="path">Leave this blank, unless you really know what you're doing.</param>
+            <param name="excludeAssebmlies">List of speckle kits assembly names to exclude from the search.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeckleCore.Converter.getMd5Hash(System.String,System.Int32)">
+            <summary>
+            Returns a stringifed MD5 hash of a string.
+            </summary>
+            <param name="str">String from which to generate the hash</param>
+            <param name="length">If 0, the full hasdh will be returned, otherwise it will be trimmed to the specified lenght</param>
+            <returns></returns>
+        </member>
+        <member name="T:SpeckleCore.ListExtensions">
+            <summary>
+            ref: https://stackoverflow.com/a/24087164
+            </summary>
+        </member>
+        <member name="T:SpeckleCore.SpeckleObjectConverter">
+            <summary>
+            Base custom serialiser/deserialiser for Newtonsoft.Json. It implements a custom discrimantor field as well as helps 
+            with the properties field of the base speckle object.
+            </summary>
+        </member>
+        <member name="T:SpeckleCore.SpecklePropertiesConverter">
+            <summary>
+            Speckle Properties mixed converter. Checks if there are any embedded Speckle Objects and casts them as appropriate.
+            </summary>
+        </member>
+        <member name="T:SpeckleCore.JsonInheritanceAttribute">
+            <summary>
+            No clue what this robocode does.
+            </summary>
+        </member>
+        <member name="T:SpeckleCore.GzipContent">
+            <summary>
+            https://cymbeline.ch/2014/03/16/gzip-encoding-an-http-post-request-body/
+            </summary>
+        </member>
+        <member name="T:SpeckleCore.TelemetrySettings">
+            <summary>
+            Simple class to keep track of telemetry settings.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:SpeckleCore.Account" -->
+        <member name="T:SpeckleCore.SentObject">
+            <summary>
+            Special class for efficiently storing sent objects. Why? We do not want to store them fully as they are already stored in the users's file. Kind of duplicates the CachedObject.
+            </summary>
+        </member>
+        <member name="P:SpeckleCore.SentObject.RestApi">
+            <summary>
+            Represents the api this object came from
+            </summary>
+        </member>
+        <member name="T:SpeckleCore.CachedObject">
+            <summary>
+            A class for storing cached objects (that have been retrieved from a database).
+            </summary>
+        </member>
+        <member name="P:SpeckleCore.CachedObject.CombinedHash">
+            <summary>
+            Represents hash(databaseId + restApi)
+            </summary>
+        </member>
+        <member name="P:SpeckleCore.CachedObject.RestApi">
+            <summary>
+            Represents the api this object came from
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.CachedObject.ToSpeckle">
+            <summary>
+            Returns the speckle object from cache.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SpeckleCore.CachedStream.CombinedHash">
+            <summary>
+            Represents hash(streamId + restApi)
+            </summary>
+        </member>
+        <member name="P:SpeckleCore.CachedStream.RestApi">
+            <summary>
+            Represents the api this object came from
+            </summary>
+        </member>
+        <member name="T:SpeckleCore.LocalContext">
+            <summary>
+            <para>This class holds the keys to the local sqlite database that acts as a local cache for various speckle things.</para>
+            <para>You can access accounts from here across speckle integrations, as well as the local object cache.</para>
+            <para>The cache holds the following tables: Accounts, CachedObjects, SentObjects, CachedStreams.</para>
+            <para>Cached objects are objects that a receiver requested. They are stored fully (with a binary blob of their speckle representation). SentObjects are objects that have been previously sent by a sender and are stored without their speckle representation (they're just refs) as a log against which to diff what to send or not.</para>
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.Init">
+            <summary>
+            Initialises the database context, ensures tables are created and powers up the rocket engines.
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.PurgeSentObjects">
+            <summary>
+            Purges the sent objects table. WARNING: Don't do this unless you know what you're doing.
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.PurgeCachedObjects">
+            <summary>
+            Purges the received objects table. WARNING: Don't do this unless you know what you're doing.
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.PurgeAccounts">
+            <summary>
+            Purges the accounts. WARNING: Don't do this unless you know what you're doing.
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.PurgeCachedStreams">
+            <summary>
+            Purges the streams table. WARNING: Don't do this unless you know what you're doing.
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.MigrateAccounts">
+            <summary>
+            Migrates existing accounts stored in text files to the sqlite db.
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.AddAccount(SpeckleCore.Account)">
+            <summary>
+            Adds a new account.
+            </summary>
+            <param name="account"></param>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.GetAllAccounts">
+            <summary>
+            Gets all accounts present.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.GetAccountsByRestApi(System.String)">
+            <summary>
+            Gets all the accounts associated with the  provided rest api.
+            </summary>
+            <param name="RestApi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.GetAccountsByEmail(System.String)">
+            <summary>
+            Gets all the accounts associated with the  provided email.
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.GetAccountByEmailAndRestApi(System.String,System.String)">
+            <summary>
+            If more accounts present, will return the first one only.
+            </summary>
+            <param name="email"></param>
+            <param name="restApi"></param>
+            <returns>null if no account is found.</returns>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.GetDefaultAccount">
+            <summary>
+            Returns the default account, if any. Otherwise throws an error.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.SetDefaultAccount(SpeckleCore.Account)">
+            <summary>
+            Sets an account as being the default one, and de-sets defaultness on all others. 
+            </summary>
+            <param name="account"></param>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.ClearDefaultAccount">
+            <summary>
+            Clears any default account. (You will no longer have a default account)
+            </summary>
+            <param name="account"></param>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.UpdateAccount(SpeckleCore.Account)">
+            <summary>
+            Udates an account by its primary key.
+            </summary>
+            <param name="account"></param>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.AddCachedObject(SpeckleCore.SpeckleObject,System.String)">
+            <summary>
+            Adds a speckle object to the local cache.
+            </summary>
+            <param name="obj">The object to add.</param>
+            <param name="restApi">The server url of where it has been persisted.</param>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.GetCachedObjects(System.Collections.Generic.List{SpeckleCore.SpeckleObject},System.String)">
+            <summary>
+            Does a cache check on a list of speckle object placeholders. It will populate the original list with any objects it can find in the cache. If none are found, the list is returned unmodified.
+            </summary>
+            <param name="objs">Speckle object placeholders to check against the cache.</param>
+            <param name="restApi">The rest api these objects are expected to come from.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.AddSentObject(SpeckleCore.SpeckleObject,System.String)">
+            <summary>
+            Adds an object that has been sent by a sender in the local cache.
+            This does not store the full object, it's just a log that it has been sent
+            to a server so it does not get sent again.
+            </summary>
+            <param name="obj">Object to store as sent ref in the local database.</param>
+            <param name="restApi">The server's url.</param>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.PruneExistingObjects(System.Collections.Generic.List{SpeckleCore.SpeckleObject},System.String)">
+            <summary>
+            Replaces any objects in the given list with placeholders if they're found in the local cache, as this means they were sent before and most probably exist on the server.
+            </summary>
+            <param name="objs"></param>
+            <param name="restApi"></param>
+            <returns>(Optinoal) The modified list.</returns>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.AddOrUpdateStream(SpeckleCore.SpeckleStream,System.String)">
+            <summary>
+            Updates or inserts a stream in the local cache.
+            </summary>
+            <param name="stream"></param>
+            <param name="restApi"></param>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.GetStream(System.String,System.String)">
+            <summary>
+            Gets a stream from the local cache.
+            </summary>
+            <param name="streamId"></param>
+            <param name="restApi"></param>
+            <returns>Null, if nothing found, or the speckle stream.</returns>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.GetTelemetrySettings">
+            <summary>
+            Returns true/false depending on wether the user has enabled telemetry.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SpeckleCore.LocalContext.SetTelemetrySettings(System.Boolean)">
+            <summary>
+            Enables or disables telemetry.
+            </summary>
+            <param name="status"></param>
+        </member>
+        <member name="T:SpeckleCore.ResourceBase">
+            <summary>Base class that adds a set of simple properties related to authorisation and commenting to all applicable resources (not users).</summary>
+        </member>
+        <member name="P:SpeckleCore.ResourceBase.Comments">
+            <summary>An array of comment ids.</summary>
+        </member>
+        <member name="P:SpeckleCore.ResourceBase.Deleted">
+            <summary>Controls archival status - does not actually delete anything</summary>
+        </member>
+        <member name="T:SpeckleCore.User">
+            <summary>Describes a user.</summary>
+        </member>
+        <member name="P:SpeckleCore.User._id">
+            <summary>Database uuid.</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Password">
+            <summary>Password.</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Role">
+            <summary>User's role. Defaults to "user".</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Avatar">
+            <summary>We will need profile pics at one point.</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Apitoken">
+            <summary>a signed jwt token that expires in 1 year.</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Token">
+            <summary>a signed jwt token that expires in 1 day.</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Email">
+            <summary>user's email</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Name">
+            <summary>User's given name</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Surname">
+            <summary>User's family name</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Company">
+            <summary>Users's company</summary>
+        </member>
+        <member name="P:SpeckleCore.User.Logins">
+            <summary>an array storing each time the user logged in.</summary>
+        </member>
+        <member name="T:SpeckleCore.AppClient">
+            <summary>A speckle client.</summary>
+        </member>
+        <member name="P:SpeckleCore.AppClient._id">
+            <summary>Database uuid.</summary>
+        </member>
+        <member name="P:SpeckleCore.AppClient.Role">
+            <summary>Either Sender, Receiver or anything else you can think of.</summary>
+        </member>
+        <member name="P:SpeckleCore.AppClient.StreamId">
+            <summary>The streamId that this client is attached to.</summary>
+        </member>
+        <member name="P:SpeckleCore.AppClient.Online">
+            <summary>Is it accessible from the server or not?</summary>
+        </member>
+        <member name="T:SpeckleCore.Project">
+            <summary>A project contains a group of streams and users.</summary>
+        </member>
+        <member name="T:SpeckleCore.Comment">
+            <summary>A comment/issue.</summary>
+        </member>
+        <member name="T:SpeckleCore.SpeckleStream">
+            <summary>A stream is essentially a collection of objects, with added properties.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.StreamId">
+            <summary>The stream's short id.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.Name">
+            <summary>The data stream's name</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.Description">
+            <summary>The data stream's description</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.Tags">
+            <summary>The data stream's name</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.Objects">
+            <summary>An array of SpeckleObject ids.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.Layers">
+            <summary>An array of speckle layers.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.BaseProperties">
+            <summary>Units, tolerances, etc.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.GlobalMeasures">
+            <summary>Any performance measures can go in here.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.Parent">
+            <summary>If this stream is a child, the parent's streamId.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.Children">
+            <summary>An array of the streamId of any children of this stream.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleStream.Ancestors">
+            <summary>If resulting from a merge, the streams that this one was born out of.</summary>
+        </member>
+        <member name="T:SpeckleCore.Layer">
+            <summary>Describes a speckle layer. To assign objects to a speckle layer, you'll need to start at `objects[ layer.startIndex ]` and finish at `objects[ layer.startIndex + layer.objectCount ]`.</summary>
+        </member>
+        <member name="P:SpeckleCore.Layer.Name">
+            <summary>Layer's name</summary>
+        </member>
+        <member name="P:SpeckleCore.Layer.Guid">
+            <summary>Layer's guid (must be unique)</summary>
+        </member>
+        <member name="P:SpeckleCore.Layer.OrderIndex">
+            <summary>Describes this layer's position in the list of layers.</summary>
+        </member>
+        <member name="P:SpeckleCore.Layer.StartIndex">
+            <summary>The index of the first object relative to the stream's objects array</summary>
+        </member>
+        <member name="P:SpeckleCore.Layer.ObjectCount">
+            <summary>How many objects does this layer have.</summary>
+        </member>
+        <member name="P:SpeckleCore.Layer.Topology">
+            <summary>String describing the nested tree structure (GH centric).</summary>
+        </member>
+        <member name="T:SpeckleCore.LayerProperties">
+            <summary>Holds stream layer properties, mostly for displaying purposes. This object will be filled up with garbage from threejs and others, but below is a minimal schema.</summary>
+        </member>
+        <member name="P:SpeckleCore.LayerProperties.Visible">
+            <summary>toggles layer visibility.</summary>
+        </member>
+        <member name="P:SpeckleCore.LayerProperties.Pointsize">
+            <summary>defines point size in threejs</summary>
+        </member>
+        <member name="P:SpeckleCore.LayerProperties.Linewidth">
+            <summary>defines line thickness in threejs</summary>
+        </member>
+        <member name="P:SpeckleCore.LayerProperties.Shininess">
+            <summary>says it all. speckle is superficial.</summary>
+        </member>
+        <member name="P:SpeckleCore.LayerProperties.Smooth">
+            <summary>smooth shading toggle</summary>
+        </member>
+        <member name="P:SpeckleCore.LayerProperties.ShowEdges">
+            <summary>display edges or not yo.</summary>
+        </member>
+        <member name="P:SpeckleCore.LayerProperties.Wireframe">
+            <summary>i'm bored.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleObject.Hash">
+            <summary>Object's unique hash.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleObject.Transform">
+            <summary>Object's transform.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleObject.GeometryHash">
+            <summary>Object's geometry hash</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleObject.ApplicationId">
+            <summary>The id/guid that the origin application identifies this object by.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleObject.Name">
+            <summary>The name of this object in the origin application GUI.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleObject.Properties">
+            <summary>The extra properties field of a speckle object.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleObject.Parent">
+            <summary>If this object is a child, the parent's objectid.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleObject.Children">
+            <summary>An array of the ids of any children of this object.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleObject.Ancestors">
+            <summary>If resulting from a merge, the objects that this one was born out of.</summary>
+        </member>
+        <member name="M:SpeckleCore.SpeckleObject.GetMd5FromObject(System.Object,System.Int32)">
+            <summary>
+            Generates a truncated (to 12) md5 hash of an object. Set length to zero to get the full hash.
+            </summary>
+            <param name="fromWhat"></param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleObject.GenerateHash">
+            <summary>
+            Recomputes the object's current hash; takes into account all values besides the hash itself, which is set to null before the calculation.
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.SpeckleObject.Scale(System.Double)">
+            <summary>
+            Use only for unit conversions. This will not affect the object hashes, thus potentially causing 
+            inconsistencies if used to save objects on a server.
+            </summary>
+            <param name="factor">Scaling factor</param>
+        </member>
+        <member name="M:SpeckleCore.SpeckleObject.ScaleProperties(System.Collections.Generic.Dictionary{System.String,System.Object},System.Double)">
+            <summary>
+            Scales any speckle objects that can be found in an Dictionary.
+            </summary>
+            <param name="dict"></param>
+            <param name="factor"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SpeckleCore.SpeckleAbstract._type">
+            <summary>the original type of the object</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleAbstract._ref">
+            <summary>the original type of the object</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleAbstract._assembly">
+            <summary>the original assembly of this object</summary>
+        </member>
+        <member name="P:SpeckleCore.ResponseBase.Success">
+            <summary>Besides the http status code, this tells you whether the call succeeded or not.</summary>
+        </member>
+        <member name="P:SpeckleCore.ResponseBase.Message">
+            <summary>Either an error or a confirmation.</summary>
+        </member>
+        <member name="P:SpeckleCore.ResponseBase.Resource">
+            <summary>Returned resource (if querying by id)</summary>
+        </member>
+        <member name="P:SpeckleCore.ResponseBase.Resources">
+            <summary>Returned resources array (if it's a bulk query)</summary>
+        </member>
+        <member name="T:SpeckleCore.ResourceType">
+            <summary>The resource type you want to comment on.</summary>
+        </member>
+        <member name="T:SpeckleCore.LoginDateProperty">
+            <summary>it's a timestamp for each login.</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleBaseColor.A">
+            <summary>alpha value</summary>
+        </member>
+        <member name="P:SpeckleCore.SpeckleBaseColor.Hex">
+            <summary>hex color value</summary>
+        </member>
+        <member name="T:SpeckleCore.ISpeckleInitializer">
+            <summary>
+            Use this interface to make sure static extension methods/object defintions are loaded from SpeckleKits AND/OR that you force a reference to SpeckleCore (thus making sure the assembly is loaded.
+            </summary>
+        </member>
+        <member name="T:SpeckleCore.SpeckleInitializer">
+            <summary>
+            Initialisation class to be called from any application that hosts the speckle plugin
+            at the begginning of the rituals
+            </summary>
+        </member>
+        <member name="M:SpeckleCore.SpeckleInitializer.GetAssemblies">
+            <summary>
+            Returns all the assemblies that have been loaded and are referencing SpeckleCore. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SpeckleCore.SpeckleInitializer.GetTypes">
+            <summary>
+            Gets the available speckle types, from core and other speckle kits.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

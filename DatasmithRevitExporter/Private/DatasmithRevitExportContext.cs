@@ -59,16 +59,20 @@ namespace DatasmithRevitExporter
 		// The file path for the view that is currently being exported.
 		private string CurrentDatasmithFilePath = null;
 
+		public SpeckleDatasmith.Command SpeckleCommand;
+
 		public FDatasmithRevitExportContext(
-			Application						InApplication,        // running Revit application
-			Document						InDocument,           // active Revit document
-			Dictionary<ElementId, string>	InDatasmithFilePaths, // Datasmith output file path
-			DatasmithRevitExportOptions		InExportOptions       // Unreal Datasmith export options
+			Application InApplication,        // running Revit application
+			Document InDocument,           // active Revit document
+			Dictionary<ElementId, string> InDatasmithFilePaths, // Datasmith output file path
+			DatasmithRevitExportOptions InExportOptions,       // Unreal Datasmith export options
+			SpeckleDatasmith.Command InSpeckleCommand
 		)
 		{
 			ProductVersion     = InApplication.VersionNumber;
 			RevitDocument      = InDocument;
 			DatasmithFilePaths = InDatasmithFilePaths;
+			SpeckleCommand = InSpeckleCommand;
 
 			// Get the Unreal Datasmith export options.
 			DebugLog            = InExportOptions.GetWriteLogFile() ? new FDatasmithFacadeLog() : null;
@@ -171,7 +175,22 @@ namespace DatasmithRevitExporter
 			DatasmithScene.Optimize();
 
 			// Build and export the Datasmith scene instance and its scene element assets.
-			DatasmithScene.ExportScene(CurrentDatasmithFilePath);
+			//DatasmithScene.ExportScene(CurrentDatasmithFilePath);
+
+			////////////////////////////////////////////////////////////////////////////
+			//Speckle
+
+			SpeckleCommand.DSscene = DatasmithScene;
+
+
+
+
+
+
+
+
+
+			/////////////////////////////////////////////////////
 
 			// Dispose of the Datasmith scene.
 			DatasmithScene = null;
