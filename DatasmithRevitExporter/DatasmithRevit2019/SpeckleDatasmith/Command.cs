@@ -49,7 +49,7 @@ namespace SpeckleDatasmith
                     Client.IntializeSender(account.Token, "docName", "Revit_Datasmith", "").ContinueWith(task =>
                     { });
                 }
-                catch( Exception err)
+                catch (Exception err)
                 {
                 }
 
@@ -337,10 +337,10 @@ namespace SpeckleDatasmith
             //    }
             //}
 
-            //data.Add(12345);
-            //data.Add("abcde");
+            data.Add(12345);
+            data.Add("abcde");
 
-            data.Add(this.DSscene);
+            //data.Add(this.DSscene);
 
             //data = data.Select(obj =>
             //{

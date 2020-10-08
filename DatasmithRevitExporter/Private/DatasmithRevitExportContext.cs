@@ -65,14 +65,14 @@ namespace DatasmithRevitExporter
 			Application InApplication,        // running Revit application
 			Document InDocument,           // active Revit document
 			Dictionary<ElementId, string> InDatasmithFilePaths, // Datasmith output file path
-			DatasmithRevitExportOptions InExportOptions,       // Unreal Datasmith export options
-			SpeckleDatasmith.Command InSpeckleCommand
-		)
+			DatasmithRevitExportOptions InExportOptions)//,       // Unreal Datasmith export options
+			//SpeckleDatasmith.Command InSpeckleCommand
+		//)
 		{
 			ProductVersion     = InApplication.VersionNumber;
 			RevitDocument      = InDocument;
 			DatasmithFilePaths = InDatasmithFilePaths;
-			SpeckleCommand = InSpeckleCommand;
+			//SpeckleCommand = InSpeckleCommand;
 
 			// Get the Unreal Datasmith export options.
 			DebugLog            = InExportOptions.GetWriteLogFile() ? new FDatasmithFacadeLog() : null;
@@ -180,7 +180,7 @@ namespace DatasmithRevitExporter
 			////////////////////////////////////////////////////////////////////////////
 			//Speckle
 
-			SpeckleCommand.DSscene = DatasmithScene;
+			//SpeckleCommand.DSscene = DatasmithScene;
 
 
 

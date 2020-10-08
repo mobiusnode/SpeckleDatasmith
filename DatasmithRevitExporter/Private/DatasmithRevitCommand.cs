@@ -163,7 +163,7 @@ namespace DatasmithRevitExporter
 			EnableViewWindow(InCommandData.Application, false);
 
 			// Create a custom export context for command Export to Unreal Datasmith.
-			FDatasmithRevitExportContext ExportContext = new FDatasmithRevitExportContext(InCommandData.Application.Application, Doc, FilePaths, ExportOptions, SpeckleCommand);
+			FDatasmithRevitExportContext ExportContext = new FDatasmithRevitExportContext(InCommandData.Application.Application, Doc, FilePaths, ExportOptions);//, SpeckleCommand);
 
 			// Export the active 3D View to the given Unreal Datasmith file.
 			using( CustomExporter Exporter = new CustomExporter(Doc, ExportContext) )
